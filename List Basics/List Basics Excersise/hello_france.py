@@ -65,4 +65,6 @@ for split_item in list_before_increase:
     increase = split_item * 1.4
     list_after_increase.append(increase)
 
+print(list_after_increase)
 print(*list_after_increase)
+print(list_after_increase)
