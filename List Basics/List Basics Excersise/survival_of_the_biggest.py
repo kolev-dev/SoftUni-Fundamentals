@@ -22,3 +22,4 @@ for element_removal in elements_to_remove:
 
 
 print(", ".join(list_of_integers))
+
