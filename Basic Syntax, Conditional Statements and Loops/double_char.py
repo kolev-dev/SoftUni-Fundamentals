@@ -14,3 +14,4 @@ while True:
             print(ch * 2, end = "")
 
         print("")
+
