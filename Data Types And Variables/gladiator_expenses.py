@@ -18,3 +18,4 @@ expenses = broken_helmet_count * helmet_price \
 
 
 print(f"Gladiator expenses: {expenses:.2f} aureus")
+
