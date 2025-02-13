@@ -1,16 +1,24 @@
-numbers_sequence = list(map(int, input().split()))
+def sorting(numbers: list) -> str:
+    sorted_numbers = []
 
-filtered = [number for number in numbers_sequence if number > sum(numbers_sequence) / len(numbers_sequence)]
+    avg = sum(numbers) / len(numbers)
+    for i, num in enumerate(numbers):
+        if num > avg:
+            if i < 5:
+                sorted_numbers.append(str(num))
+
+    print(" ".join(sorted_numbers))
 
 
 
-descending_order = sorted(filtered, reverse=True)
-descending_order_strings = list(map(str, descending_order))
 
-for n in range(5):
-    print(descending_order_strings[n])
+numbers = sorted(map(int,input().split()), reverse=True)
 
-# print(" ".join(descending_order_strings))
+if numbers[0] == 1 and len(numbers) == 1:
+    print("No")
+else:
+    sorting(numbers)
+
 
 
 
