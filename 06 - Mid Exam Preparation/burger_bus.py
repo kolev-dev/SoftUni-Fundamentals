@@ -9,7 +9,6 @@ for city in range(1, number_of_cities + 1):
     money_earned = float(input())
     expenses = float(input())
 
-
     if city % 5 == 0:
         money_earned *= 0.9
 
