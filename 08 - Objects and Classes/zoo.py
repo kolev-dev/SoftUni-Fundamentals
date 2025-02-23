@@ -10,7 +10,7 @@ class Zoo:
 
 
     def add_animal(self, species, name):
-        if species == "mammals":
+        if species == "mammal":
             self.mammals.append(name)
 
         elif species == "fish":
@@ -23,17 +23,15 @@ class Zoo:
 
     def get_info(self, species_type):
 
-        if species_type == "mammals":
-
-            return f"{self.mammals} in {self.zoo_name}: {", ".join(self.mammals)} Total animals: {self.__animals}"
+        if species_type == "mammal":
+            return f"Mammals in {self.zoo_name}: {', '.join(self.mammals)}\n Total animals: {self.__animals}"
 
         elif species_type == "fish":
-
-            return f"{self.fishes} in {self.zoo_name}: {", ".join(self.fishes)} Total animals: {self.__animals}"
+            return f"Fishes in {self.zoo_name}: {', '.join(self.fishes)}\n Total animals: {self.__animals}"
 
         elif species_type == "bird":
 
-            return f"{self.birds} in {self.zoo_name}: {", ".join(self.birds)} Total animals: {self.__animals}"
+            return f"Birds in {self.zoo_name}: {', '.join(self.birds)}\n Total animals: {self.__animals}"
 
 
 
@@ -44,8 +42,8 @@ n = int(input())
 zoo = Zoo(name_of_zoo)
 
 for _ in range(n):
-    species, name = input().split()
-    zoo.add_animal(species, name)
+    command = input().split()
+    zoo.add_animal(command[0], command[1])
 
 
 
