@@ -14,10 +14,12 @@ while True:
         students.append({"name": name, "ID": ID, "course": course})
 
 
+#filling list with the responding to search students
 for dictionary in students:
     if course_to_search.startswith(dictionary["course"][0:3]):
         corresponding_to_course.append(dictionary)
 
-# for responding in course_to_search:
-#     print(f"{responding["name"]} - {responding[ID]}")
 
+#unpacking the list filled with the searched course
+for any_student in corresponding_to_course:
+    print(f"{any_student['name']} - {any_student['ID']}")
