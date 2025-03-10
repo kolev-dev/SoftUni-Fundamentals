@@ -10,7 +10,7 @@ while True:
 
         price = float(price)
         quantity = int(quantity)
-
+    
         if product not in bought_items:
             bought_items[product] = []
             bought_items[product].append(price)
