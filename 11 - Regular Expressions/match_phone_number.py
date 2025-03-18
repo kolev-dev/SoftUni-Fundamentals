@@ -2,5 +2,6 @@ import re
 
 phone_numbers = input()
 
-match = re.findall(r'\+359 \d \d{3} \d{4}|\+359-\d-\d{3}-\d{4}$', phone_numbers)
+match = re.findall(r'\+359-2-\d{3}-\d{4}\b|\+359 2 \d{3} \d{4}\b', phone_numbers)
 print(", ".join(match))
+
